@@ -4,21 +4,25 @@ using UnityEngine;
 
 public class Jumper2 : MonoBehaviour {
 
-    GameObject jumper3;
+    
+
     // Use this for initialization
 
     void OnCollisionEnter(Collision collision)
     {
-        Vector3 direction = jumper3.transform.position - transform.position;
-        direction = direction.normalized * 1000;
+        Vector3 direction = new Vector3(0, 500.0f * Time.deltaTime, 0);
+        direction = direction.normalized * 500;
         collision.gameObject.GetComponent<Rigidbody>().AddForce(direction);
+
     }
+
     void Start () {
-        jumper3 = GameObject.Find("jumper3");
+        
     }
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+
+        
+    }
 }
