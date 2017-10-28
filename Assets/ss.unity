@@ -526,6 +526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f62b025faf74a5541a8a658b5a77340f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Power: 0
 --- !u!1 &89507183
 GameObject:
   m_ObjectHideFlags: 0
@@ -2115,6 +2116,7 @@ GameObject:
   - component: {fileID: 359036522}
   - component: {fileID: 359036521}
   - component: {fileID: 359036525}
+  - component: {fileID: 359036526}
   m_Layer: 0
   m_Name: Bridge
   m_TagString: Untagged
@@ -2180,15 +2182,26 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 359036520}
-  m_LocalRotation: {x: -0, y: 0.9605633, z: -0, w: -0.27806142}
+  m_LocalRotation: {x: 0, y: 0.9848078, z: -0, w: -0.17364809}
   m_LocalPosition: {x: 6.28, y: 2.38, z: -0.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 643109035}
   m_Father: {fileID: 0}
   m_RootOrder: 19
-  m_LocalEulerAnglesHint: {x: 0, y: 212.28899, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 200, z: 0}
 --- !u!114 &359036525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 359036520}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e87d87021b6ee445b89f3ece4ff71c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &359036526
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -2196,9 +2209,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 359036520}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e87d87021b6ee445b89f3ece4ff71c3, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a4e132f3d7a9dd4089e29797603c279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Speed: 10
 --- !u!1 &359147988
 GameObject:
   m_ObjectHideFlags: 0

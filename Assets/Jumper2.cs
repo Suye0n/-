@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class Jumper2 : MonoBehaviour {
 
-    
+    public float Power;
 
     // Use this for initialization
-
+    
     void OnCollisionEnter(Collision collision)
     {
-        Vector3 direction = new Vector3(0, 500.0f * Time.deltaTime, 0);
-        direction = direction.normalized * 500;
-        collision.gameObject.GetComponent<Rigidbody>().AddForce(direction);
+        Vector3 Power = new Vector3(0, 500 * Time.deltaTime, 0);
+        Power = Power.normalized * 500;
+
+        collision.gameObject.GetComponent<Rigidbody>().AddForce(Power);
 
     }
 
